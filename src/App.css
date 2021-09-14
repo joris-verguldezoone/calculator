@@ -1,0 +1,119 @@
+
+body{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+#screen{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:10vh;
+  border: solid 1px 1px 1px;
+  background-color: #282c34;
+}
+#innerScreen{
+  background-color: #424855;
+  width:90%;
+  height: 70%;
+  border-radius: 1em;
+  text-align: right;
+  color:white;
+  font-size:2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+#screenNumbers{
+  margin-right: 15px;
+}
+#calculator_container{
+  height:90vh;
+  width:25vw;
+  background-color: black;
+}
+#operation_button{
+  color: white;
+  font-size: 2em;
+  height:80%;
+
+} 
+.number_pad{
+  color : white;
+  height:100%;
+  width:65%;
+  display: flex;
+  flex-direction: row;
+}
+.number_pad  {
+  height:30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.number_pad  > p{
+  height:100px;
+  width:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.number_pad > p:hover{
+  background-color:rgba(255,165,0,0.4);
+  cursor:pointer;
+}
+#button_container{
+  height:600px;
+  width:500px;
+  display: flex;
+  flex-direction: row;
+}
+#operation_button > div > p{
+  height:100%;
+  width:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#operation_button > div{
+  height:100px;
+  display: flex;
+  justify-content: center;
+}
+#operation_button > div > p:hover{
+  background-color:rgba(255,165,0,0.4);
+
+}
+#MagnificientEqualButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color:white;  
+  background-color: rgba(255, 166, 0, 0.883);
+}
+#MagnificientEqualButton > p{
+  height:85px;
+  width:100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#MagnificientEqualButton > p:hover{
+  background-color:rgba(255,165,0,0.4);
+
+  
+}
+td{
+  display: flex;
+  flex-direction: row;
+}
