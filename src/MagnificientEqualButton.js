@@ -1,9 +1,10 @@
-function MagnificientEqualButton() {
+function MagnificientEqualButton(props) {
     return (
+        <button type="button" onClick={props.handleClick} className="number_button" id={'number-' + props.label} value={props.label}>{props.label}</button>
 
-        <p>=</p>
 
     );
 }
 
 export default MagnificientEqualButton;
+

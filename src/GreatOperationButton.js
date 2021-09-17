@@ -1,23 +1,13 @@
-function GreatOperationButton() {
+import { useEffect } from "react";
+
+function GreatOperationButton({ operand, handleClick, label }) {
+    useEffect(() => {
+        console.log(operand)
+    }, [operand])
     return (
-        <section id='operation_button'>
-            <div>
-                <p>+</p>
-            </div>
-            <div>
-                <p>-</p>
-
-            </div>
-            <div>
-                <p>/</p>
-
-            </div>
-            <div>
-                <p>*</p>
-
-            </div>
-
-        </section >
+        <div class='number_div'>
+            <button type="button" className={`number_button ${operand == label ? 'toggleFocus' : ''}`} onClick={handleClick} value={label}>{label}</button>
+        </div>
     );
 }
 

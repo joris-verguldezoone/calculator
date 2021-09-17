@@ -1,119 +1,93 @@
-
 body{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  height:80vh;
+}
 
-}
-#screen{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-  height:10vh;
-  border: solid 1px 1px 1px;
-  background-color: #282c34;
-}
-#innerScreen{
-  background-color: #424855;
-  width:90%;
-  height: 70%;
-  border-radius: 1em;
-  text-align: right;
-  color:white;
-  font-size:2em;
+
+#root{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  height:100%;
 }
-#screenNumbers{
-  margin-right: 15px;
+.containerPrincipal{
+  width:450px;
+  height:450px;
+  background-color: rgb(32, 21, 21);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
-#calculator_container{
-  height:90vh;
-  width:25vw;
-  background-color: black;
+.screen{
+  height:20%;
+  width:100%;
+  background-color: rgb(32, 21, 21);
+  color:white;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
-#operation_button{
+.screen > p{
+  margin-right: 20px;
+}
+.AmazingNumber{
+  display: flex;
+  flex-wrap: wrap;
+  width:60%;
+  align-content: flex-end
+
+}
+.number_button{
+  height:100%;
+  width:100%;
+  background-color: grey;
+  /* border-radius: 1em */
+}
+.number_div{
+  height:90px;
+  width:90px;
+}
+.diviseNumber_Operator{
+  display: flex;
+  flex-direction: row;
+}
+.operator{
+  width:40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+.bottomButton{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
+.bottomButton > :nth-child(3){
+  /* flex:2; */
+  background-color: orange;
+  font-size:2em;
+}
+
+#itsOver{
+  background-color: rgb(32, 21, 21);
   color: white;
-  font-size: 2em;
-  height:80%;
-
-} 
-.number_pad{
-  color : white;
   height:100%;
-  width:65%;
-  display: flex;
-  flex-direction: row;
+  /* display: block; */
+  width:100%;
 }
-.number_pad  {
-  height:30%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#itsOver > p{
+  margin-left: 20px;
 }
-.number_pad  > p{
-  height:100px;
-  width:100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-}
-.number_pad > p:hover{
-  background-color:rgba(255,165,0,0.4);
-  cursor:pointer;
-}
-#button_container{
-  height:600px;
-  width:500px;
-  display: flex;
-  flex-direction: row;
-}
-#operation_button > div > p{
-  height:100%;
-  width:100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#operation_button > div{
-  height:100px;
-  display: flex;
-  justify-content: center;
-}
-#operation_button > div > p:hover{
-  background-color:rgba(255,165,0,0.4);
+
+
+#vegeta{
+  height:400px;
+  width:400px;
 
 }
-#MagnificientEqualButton{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  color:white;  
-  background-color: rgba(255, 166, 0, 0.883);
-}
-#MagnificientEqualButton > p{
-  height:85px;
-  width:100px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
-#MagnificientEqualButton > p:hover{
-  background-color:rgba(255,165,0,0.4);
-
-  
-}
-td{
-  display: flex;
-  flex-direction: row;
+.toggleFocus{
+  background-color: orange;
 }

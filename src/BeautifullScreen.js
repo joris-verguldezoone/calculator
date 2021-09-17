@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
-function BeautifullScreen() {
+function BeautifullScreen(props) {
     return (
-        <section id="screen">
-            <div id='innerScreen'>
-                <p id='screenNumbers'>0</p>
-            </div>
+        <section className="screen">
+            <p>{props.operation}</p>
         </section>
     );
 }

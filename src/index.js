@@ -4,6 +4,7 @@ import './index.css';
 import TheTitle from './TheTitle';
 import reportWebVitals from './reportWebVitals';
 import Calculator from './Calculator';
+
 ReactDOM.render(
   <React.StrictMode>
     <TheTitle />
